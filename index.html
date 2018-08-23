@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- Due to family visiting from out of the country for the past 2 weeks, I fell behind on this Hangman game, but I will be finishing up development on it this weekend.  Currently I use a simple Bootstrap layout to display Intstructions, a Movie to Guess (with underscores '_'), and Guesses So Far, with the JS logic accounting for the guesses the user has made, revealing each letter that is guessed correctly, and displaying guesses so far.  The logic only accounts for single word movie titles at the moment, but I will be working to add the ability to store multi-word movie titles.  I also need to add the drawing of the Hangman, images, and several other pieces.  This is just a starting point, for what I will build out this weekend when I'm catching up on Activities and this Homework. -->
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset='UTF-8'>
+    <title>Hangman</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron text-center">
+                
+                <h1>Hangman</h1>
+
+                <p><strong>Instructions: </strong>Guess the title of the movie, by choosing letters a-z.</p>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 text-center">
+
+                    <h3>Movie To Guess</h3>
+                    <div id="game"></div>
+
+                </div>
+
+                <div class="col-md-6 text-center">
+
+                    <h3>Guesses So Far</h3>
+                    <div id="guesses"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    <script src="assets/javascript/game.js"></script>
+
+    </body>
+</html>
